@@ -1,16 +1,26 @@
 # William Martin Portfolio
 
-## Quick start
+Cloud Support & DevOps Engineer portfolio website.
+
+## Local preview
 Open `index.html` in a browser.
 
+## GitHub Pages
+Repository: `william-martin-portfolio`
+
 ## Before publishing
-1. Replace the `YOUR PHOTO` placeholder in `index.html` with your professional photo.
-2. Replace the GitHub and LinkedIn links with your real profile URLs.
-3. Replace `YOUR-EMAIL@example.com` with your preferred professional email.
-4. Add screenshots, architecture diagrams and GitHub repository links to each project page.
-5. Publish using GitHub Pages.
+- Confirm the professional photo is appropriate.
+- Verify GitHub, LinkedIn and email links.
+- Add screenshots and architecture diagrams to the project pages.
+- Add direct links to the relevant GitHub project repositories.
+- Publish from the `main` branch, root folder.
 
-## Suggested repository
-`william-martin-portfolio`
-
-The site is plain HTML/CSS/JavaScript, so it can be hosted directly from a GitHub repository without a build system.
+## Sections
+- Home / Professional Profile
+- Digital Presence
+- About Me
+- Experience
+- Skills
+- What I Bring
+- Projects and project pages
+- Currently Learning
