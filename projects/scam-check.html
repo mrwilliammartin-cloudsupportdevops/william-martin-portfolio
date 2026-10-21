@@ -1,6 +1,222 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Scam-Check Tool | William Martin</title><link rel="stylesheet" href="../styles.css"></head><body>
-<header class="site-header"><nav class="nav container"><a class="logo" href="../index.html">WM<span>.</span></a><a class="btn secondary" href="../index.html#projects">← Back to Projects</a></nav></header>
-<main><section class="hero" style="min-height:70vh"><div class="container"><p class="eyebrow">CLOUD / SECURITY</p><h1 style="font-size:clamp(3rem,8vw,6rem);max-width:950px">Scam-Check Tool</h1><p class="hero-text">A capstone concept designed to help users assess suspicious messages, URLs or scam indicators.</p><p><strong>Technology:</strong> Python, APIs, Cloud, Monitoring</p></div></section>
-<section class="section"><div class="container"><p class="eyebrow">PROJECT DETAILS</p><h2>What I built and learned.</h2><div class="two-col"><p>The concept combines application logic with cloud-support considerations. A production-ready version could accept a suspicious URL or message, extract indicators, query trusted reputation services and return an understandable risk assessment.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="ScamCheck Tool — William Martin's Cloud Support & DevOps capstone project, with live application, CI/CD, Azure monitoring and risk-assessment evidence.">
+  <title>ScamCheck Tool | William Martin</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="../index.html">WM<span>.</span></a>
+    <div class="nav-actions">
+      <a class="btn secondary" href="../index.html#projects">← Back to Projects</a>
+      <a class="btn primary" href="https://scamcheck.azurewebsites.net/" target="_blank" rel="noopener">Live Demo ↗</a>
+    </div>
+  </nav>
+</header>
 
-My responsibility within the capstone includes ongoing maintenance, monitoring and cost-management considerations: logging, health checks, alerting, resource sizing and keeping operating costs predictable.</p><div class="skill-card"><h3>What this demonstrates</h3><p>Problem solving · Technical troubleshooting · Documentation · Practical implementation · Continuous learning</p></div></div></div></section></main></body></html>
+<main>
+  <section class="hero project-hero">
+    <div class="container">
+      <p class="eyebrow">CLOUD / SECURITY / DEVOPS</p>
+      <h1 class="project-title">Scam<span>Check</span></h1>
+      <p class="hero-text project-lead">A cloud-hosted scam-awareness and risk-assessment platform that lets users check suspicious phone numbers, URLs and screenshots and receive an understandable advisory result.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://scamcheck.azurewebsites.net/" target="_blank" rel="noopener">Open ScamCheck ↗</a>
+        <a class="btn secondary" href="#evidence">View technical evidence ↓</a>
+      </div>
+      <div class="project-facts">
+        <div><strong>Python / Flask</strong><span>Application</span></div>
+        <div><strong>Azure</strong><span>Cloud platform</span></div>
+        <div><strong>Azure DevOps</strong><span>CI/CD</span></div>
+        <div><strong>Grafana + Monitor</strong><span>Observability</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">01 — THE PROJECT</p>
+      <h2>Turning a real-world problem into a cloud engineering project.</h2>
+      <div class="two-col">
+        <div>
+          <p>ScamCheck was developed as a Cloud Support & DevOps capstone proof of concept. The application brings together a web interface, backend application logic, external intelligence sources and cloud operations into one user-facing service.</p>
+          <p class="spaced">The goal is not to declare a message or website "safe" with certainty. Instead, ScamCheck presents indicators and an advisory risk level so users can pause, verify and make a more informed decision.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Core capabilities</h3>
+          <ul class="feature-list">
+            <li><strong>Phone checks</strong> — number intelligence and risk indicators</li>
+            <li><strong>URL checks</strong> — threat/reputation lookup using Safe Browsing</li>
+            <li><strong>Screenshot analysis</strong> — identifies suspicious wording and patterns</li>
+            <li><strong>Risk presentation</strong> — Low, Potential Risk and High Risk outcomes</li>
+            <li><strong>Resources & history</strong> — user-facing scam awareness and previous checks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="eyebrow">02 — ENGINEERING STACK</p>
+      <h2>Application, cloud and operations working together.</h2>
+      <div class="skills-grid">
+        <article class="skill-card"><h3>Application</h3><p>Python · Flask · HTML/CSS · API integrations · automated tests · multilingual UI</p></article>
+        <article class="skill-card"><h3>Cloud</h3><p>Microsoft Azure · App Service · Application Insights / Azure Monitor · Azure SQL · Azure Storage</p></article>
+        <article class="skill-card"><h3>DevOps</h3><p>Azure DevOps Repos · Azure Pipelines · Docker · CI/CD · Kubernetes assets · iterative delivery</p></article>
+        <article class="skill-card"><h3>Security & Intelligence</h3><p>Google Safe Browsing · phone intelligence · screenshot-based scam indicators · privacy-aware user guidance</p></article>
+        <article class="skill-card"><h3>Observability</h3><p>Grafana dashboarding · request volume · success/failure monitoring · response-time visibility · Azure application telemetry</p></article>
+        <article class="skill-card"><h3>My Capstone Role</h3><p>Ongoing maintenance, monitoring and cost-management considerations — health checks, logging, alerting, resource sizing and operational awareness.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">03 — USER EXPERIENCE</p>
+      <h2>Three practical ways to investigate a suspicious item.</h2>
+      <div class="workflow-grid">
+        <div class="workflow-step"><span>01</span><h3>Submit</h3><p>Enter a phone number, suspicious URL or screenshot.</p></div>
+        <div class="workflow-step"><span>02</span><h3>Assess</h3><p>ScamCheck evaluates the relevant intelligence source or analysis path.</p></div>
+        <div class="workflow-step"><span>03</span><h3>Respond</h3><p>Receive an advisory risk level, indicators and a recommended next action.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evidence" class="section alt">
+    <div class="container">
+      <p class="eyebrow">04 — PROJECT EVIDENCE</p>
+      <h2>What the implementation looks like in practice.</h2>
+      <p class="section-intro">A selection of screenshots captured from the live application and its Azure/DevOps operating environment. Click any image to enlarge it.</p>
+
+      <div class="evidence-grid">
+        <figure class="evidence-card evidence-feature">
+          <a href="../assets/scamcheck-web-application.png" class="lightbox-link" data-caption="ScamCheck live web application — main phone-check interface and risk-assessment presentation.">
+            <img src="../assets/scamcheck-web-application.png" alt="ScamCheck web application home screen" loading="lazy">
+          </a>
+          <figcaption><strong>Live web application</strong><span>Phone, URL and screenshot checking interface</span></figcaption>
+        </figure>
+
+        <figure class="evidence-card">
+          <a href="../assets/scamcheck-phone-assessment.png" class="lightbox-link" data-caption="Phone number assessment — intelligence and risk indicators presented to the user.">
+            <img src="../assets/scamcheck-phone-assessment.png" alt="ScamCheck phone number risk assessment" loading="lazy">
+          </a>
+          <figcaption><strong>Phone assessment</strong><span>Number intelligence and risk indicators</span></figcaption>
+        </figure>
+
+        <figure class="evidence-card">
+          <a href="../assets/scamcheck-url-assessment.png" class="lightbox-link" data-caption="URL risk assessment — Safe Browsing result and advisory guidance.">
+            <img src="../assets/scamcheck-url-assessment.png" alt="ScamCheck URL risk assessment" loading="lazy">
+          </a>
+          <figcaption><strong>URL assessment</strong><span>Threat lookup and user guidance</span></figcaption>
+        </figure>
+
+        <figure class="evidence-card">
+          <a href="../assets/scamcheck-screenshot-analysis.png" class="lightbox-link" data-caption="Screenshot analysis — suspicious indicators extracted from a scam-style message.">
+            <img src="../assets/scamcheck-screenshot-analysis.png" alt="ScamCheck screenshot message analysis" loading="lazy">
+          </a>
+          <figcaption><strong>Screenshot analysis</strong><span>Suspicious language, urgency and link indicators</span></figcaption>
+        </figure>
+
+        <figure class="evidence-card">
+          <a href="../assets/scamcheck-azure-devops-pipeline.png" class="lightbox-link" data-caption="Azure DevOps pipeline history — iterative CI/CD delivery and troubleshooting evidence.">
+            <img src="../assets/scamcheck-azure-devops-pipeline.png" alt="Azure DevOps ScamCheck pipeline history" loading="lazy">
+          </a>
+          <figcaption><strong>CI/CD pipeline</strong><span>Azure DevOps build and deployment history</span></figcaption>
+        </figure>
+
+        <figure class="evidence-card">
+          <a href="../assets/scamcheck-azure-repository.png" class="lightbox-link" data-caption="Azure DevOps repository — application source, tests, Dockerfile, pipeline configuration and supporting assets.">
+            <img src="../assets/scamcheck-azure-repository.png" alt="Azure DevOps ScamCheck repository" loading="lazy">
+          </a>
+          <figcaption><strong>Source repository</strong><span>Application, tests, Docker and pipeline configuration</span></figcaption>
+        </figure>
+
+        <figure class="evidence-card">
+          <a href="../assets/scamcheck-grafana-dashboard.png" class="lightbox-link" data-caption="Grafana production-operations dashboard snapshot showing request volume and application health metrics.">
+            <img src="../assets/scamcheck-grafana-dashboard.png" alt="Grafana ScamCheck monitoring dashboard" loading="lazy">
+          </a>
+          <figcaption><strong>Grafana observability</strong><span>Request volume, success rate, latency and failures</span></figcaption>
+        </figure>
+
+        <figure class="evidence-card">
+          <a href="../assets/scamcheck-azure-monitoring.png" class="lightbox-link" data-caption="Azure Application Insights / Monitoring view for the ScamCheck application.">
+            <img src="../assets/scamcheck-azure-monitoring.png" alt="Azure ScamCheck application monitoring" loading="lazy">
+          </a>
+          <figcaption><strong>Azure monitoring</strong><span>Application telemetry and response-time visibility</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">05 — OPERATIONS</p>
+      <h2>Monitoring is part of the project, not an afterthought.</h2>
+      <div class="two-col">
+        <div>
+          <p>The monitoring evidence demonstrates the operational side of the project: request volume, success/failure rates and response time were surfaced through Grafana and Azure monitoring so that application behaviour could be observed rather than guessed.</p>
+          <p class="spaced">In one captured Grafana test window on 22 September 2026, the dashboard displayed 352 total requests, a 96.9% success rate, 135 ms average response time and 11 failed requests. These are a point-in-time testing/monitoring snapshot, not a long-term SLA or production guarantee.</p>
+        </div>
+        <div class="metric-card-grid">
+          <div class="metric-card"><strong>352</strong><span>Requests in captured window</span></div>
+          <div class="metric-card"><strong>96.9%</strong><span>Observed success rate</span></div>
+          <div class="metric-card"><strong>135 ms</strong><span>Average response time</span></div>
+          <div class="metric-card"><strong>11</strong><span>Failed requests observed</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="eyebrow">06 — WHAT THIS DEMONSTRATES</p>
+      <h2>A portfolio project that shows more than application code.</h2>
+      <div class="two-col">
+        <div class="skill-card">
+          <h3>Cloud Support & DevOps skills</h3>
+          <ul class="feature-list">
+            <li>Tracing a user-facing service from source code to cloud deployment</li>
+            <li>Working with CI/CD pipelines and iterative troubleshooting</li>
+            <li>Using telemetry to understand application behaviour</li>
+            <li>Thinking about reliability, maintainability and operating cost</li>
+            <li>Documenting technical decisions for handover and presentation</li>
+          </ul>
+        </div>
+        <div class="skill-card disclaimer-card">
+          <h3>Important limitation</h3>
+          <p>ScamCheck is an advisory risk-assessment proof of concept. A low-risk result does not guarantee that a message, number or website is safe. Users should independently verify unexpected requests through trusted official channels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact project-end">
+    <div class="container">
+      <p class="eyebrow">07 — EXPLORE</p>
+      <h2>See the application in action.</h2>
+      <p class="section-intro">The strongest evidence is the combination of a working application, delivery pipeline and operational monitoring.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://scamcheck.azurewebsites.net/" target="_blank" rel="noopener">Launch ScamCheck ↗</a>
+        <a class="btn secondary" href="../index.html#projects">Back to Portfolio</a>
+      </div>
+      <p class="footer-note">© 2026 William Martin · ScamCheck Cloud & DevOps Capstone Proof of Concept.</p>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+  <div class="lightbox-inner">
+    <img id="lightbox-image" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>

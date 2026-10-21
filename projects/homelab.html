@@ -1,6 +1,119 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>NEXUS-CORE Home Lab | William Martin</title><link rel="stylesheet" href="../styles.css"></head><body>
-<header class="site-header"><nav class="nav container"><a class="logo" href="../index.html">WM<span>.</span></a><a class="btn secondary" href="../index.html#projects">← Back to Projects</a></nav></header>
-<main><section class="hero" style="min-height:70vh"><div class="container"><p class="eyebrow">HOMELAB</p><h1 style="font-size:clamp(3rem,8vw,6rem);max-width:950px">NEXUS-CORE Home Lab</h1><p class="hero-text">A personal infrastructure environment for building practical cloud-support and DevOps skills.</p><p><strong>Technology:</strong> Linux, Docker, Kubernetes, Tailscale, Windows</p></div></section>
-<section class="section"><div class="container"><p class="eyebrow">PROJECT DETAILS</p><h2>What I built and learned.</h2><div class="two-col"><p>NEXUS-CORE is my hands-on learning environment. It gives me a safe place to practise Linux administration, networking, remote access, containers, Kubernetes and troubleshooting.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="NEXUS-CORE Home Lab — William Martin's hands-on Linux, networking, containers and DevOps learning environment.">
+  <title>NEXUS-CORE Home Lab | William Martin</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="../index.html">WM<span>.</span></a>
+    <div class="nav-actions">
+      <a class="btn secondary" href="../index.html#projects">← Back to Projects</a>
+    </div>
+  </nav>
+</header>
 
-The lab is intentionally treated like a small production environment: document changes, monitor services, secure access and troubleshoot systematically rather than simply making things work once.</p><div class="skill-card"><h3>What this demonstrates</h3><p>Problem solving · Technical troubleshooting · Documentation · Practical implementation · Continuous learning</p></div></div></div></section></main></body></html>
+<main>
+  <section class="hero project-hero">
+    <div class="container">
+      <p class="eyebrow">HOMELAB / IN PROGRESS</p>
+      <h1 class="project-title">NEXUS-CORE <span>Home Lab</span></h1>
+      <p class="hero-text project-lead">A hands-on infrastructure environment for practising Linux administration, networking, containers, Kubernetes, remote access and DevOps troubleshooting.</p>
+      <div class="project-facts">
+        <div><strong>Linux</strong><span>Administration & troubleshooting</span></div>
+        <div><strong>Docker</strong><span>Container workloads</span></div>
+        <div><strong>Kubernetes</strong><span>Local orchestration</span></div>
+        <div><strong>Networking</strong><span>Routing & remote access</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">01 — PURPOSE</p>
+      <h2>Turning learning into a repeatable infrastructure environment.</h2>
+      <div class="two-col">
+        <div>
+          <p>NEXUS-CORE is my personal lab environment for turning Cloud Support and DevOps concepts into practical, repeatable work. Instead of treating each exercise as an isolated tutorial, I use the lab to practise administration, networking, automation, containerisation, troubleshooting and documentation.</p>
+          <p class="spaced">The environment is deliberately treated like a small operational platform: changes are tested, problems are investigated systematically, and working configurations are documented so they can be reproduced later.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Current focus</h3>
+          <ul class="feature-list">
+            <li><strong>Linux</strong> — services, permissions, networking and CLI administration</li>
+            <li><strong>Networking</strong> — LAN discovery, routing, SSH and remote administration</li>
+            <li><strong>Containers</strong> — Docker images, containers and application deployment</li>
+            <li><strong>Kubernetes</strong> — deployments, services and workload troubleshooting</li>
+            <li><strong>DevOps</strong> — Git, CI/CD, automation and infrastructure practices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="eyebrow">02 — CURRENT WORK</p>
+      <h2>Projects already built in the lab.</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Linux Network Scanner</h3>
+          <p>Nmap + Bash + PHP + Apache dashboard for controlled network discovery, service exposure review, scan history and scanner health.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Flask CI/CD</h3>
+          <p>Containerised Flask application published to Docker Hub and deployed to a local Kubernetes environment with a NodePort service.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Remote Administration</h3>
+          <p>Hands-on use of SSH, RDP and Tailscale concepts to manage lab systems and troubleshoot connectivity across different networks.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Automation</h3>
+          <p>Bash and Python exercises focused on repeatability, data collection, troubleshooting and operational workflows.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">03 — ROADMAP</p>
+      <h2>Building toward a dedicated Home Lab platform.</h2>
+      <div class="two-col">
+        <div class="skill-card">
+          <h3>Next phase</h3>
+          <ul class="feature-list">
+            <li>Move the working lab workloads from the Windows development environment to the physical NEXUS-CORE server.</li>
+            <li>Evaluate Proxmox VE as the dedicated virtualisation platform.</li>
+            <li>Re-establish the Ubuntu and security-testing workloads as managed lab VMs.</li>
+            <li>Implement reliable remote administration and backup procedures.</li>
+          </ul>
+        </div>
+        <div class="skill-card disclaimer-card">
+          <h3>Project status</h3>
+          <p>The dedicated physical-server migration is intentionally marked as <strong>in progress</strong>. The existing lab workloads remain preserved until the physical NEXUS-CORE platform is available for the migration and verification phase.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact project-end">
+    <div class="container">
+      <p class="eyebrow">04 — WHAT THIS DEMONSTRATES</p>
+      <h2>Practical infrastructure thinking.</h2>
+      <p class="section-intro">NEXUS-CORE demonstrates a learning approach based on building, breaking, troubleshooting, documenting and improving systems — the same cycle used when supporting real infrastructure.</p>
+      <div class="buttons">
+        <a class="btn primary" href="../projects/nmap-dashboard.html">View Network Scanner →</a>
+        <a class="btn secondary" href="../projects/flask-cicd.html">View Flask CI/CD →</a>
+      </div>
+      <p class="footer-note">© 2026 William Martin · NEXUS-CORE Home Lab.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

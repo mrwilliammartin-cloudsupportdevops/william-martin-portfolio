@@ -1,6 +1,202 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Network Scanner Dashboard | William Martin</title><link rel="stylesheet" href="../styles.css"></head><body>
-<header class="site-header"><nav class="nav container"><a class="logo" href="../index.html">WM<span>.</span></a><a class="btn secondary" href="../index.html#projects">← Back to Projects</a></nav></header>
-<main><section class="hero" style="min-height:70vh"><div class="container"><p class="eyebrow">CYBERSECURITY</p><h1 style="font-size:clamp(3rem,8vw,6rem);max-width:950px">Network Scanner Dashboard</h1><p class="hero-text">A controlled home-lab project exploring network discovery and service enumeration through a simple web interface.</p><p><strong>Technology:</strong> Nmap, Linux, Apache, Python, Networking</p></div></section>
-<section class="section"><div class="container"><p class="eyebrow">PROJECT DETAILS</p><h2>What I built and learned.</h2><div class="two-col"><p>The project uses Nmap as the scanning engine and a web interface to make scan results easier to understand.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Linux Network Scanner Dashboard — William Martin's Nmap, Bash, PHP and Apache home-lab project.">
+  <title>Linux Network Scanner Dashboard | William Martin</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="../index.html">WM<span>.</span></a>
+    <div class="nav-actions">
+      <a class="btn secondary" href="../index.html#projects">← Back to Projects</a>
+      <a class="btn primary" href="#evidence">View evidence ↓</a>
+    </div>
+  </nav>
+</header>
 
-The learning focus is defensive: understanding how devices expose services, how ports can be discovered, and why organisations need secure configurations and monitoring. Scanning should only be performed against systems where you have explicit permission.</p><div class="skill-card"><h3>What this demonstrates</h3><p>Problem solving · Technical troubleshooting · Documentation · Practical implementation · Continuous learning</p></div></div></div></section></main></body></html>
+<main>
+  <section class="hero project-hero">
+    <div class="container">
+      <p class="eyebrow">LINUX / NETWORKING / CYBERSECURITY</p>
+      <h1 class="project-title">Linux Network Scanner <span>Dashboard</span></h1>
+      <p class="hero-text project-lead">A Linux-based network discovery and service-monitoring dashboard that turns scheduled Nmap scans into a readable operational view.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#evidence">View technical evidence ↓</a>
+        <a class="btn secondary" href="../code/nmap/network_scan.sh" download>Download Bash scanner</a>
+      </div>
+      <div class="project-facts">
+        <div><strong>Nmap</strong><span>Discovery & service detection</span></div>
+        <div><strong>Bash</strong><span>Scanner automation</span></div>
+        <div><strong>PHP + Apache</strong><span>Web dashboard</span></div>
+        <div><strong>systemd</strong><span>Scheduled execution</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">01 — THE PROJECT</p>
+      <h2>From raw Nmap output to an operational dashboard.</h2>
+      <div class="two-col">
+        <div>
+          <p>This project was built as a controlled home-lab exercise to understand practical network discovery, service exposure and Linux automation. Nmap performs the discovery and service scan, a Bash script controls execution and preserves valid previous results, and a PHP dashboard presents the information through Apache.</p>
+          <p class="spaced">The project is intentionally defensive and lab-focused: scanning should only be performed against networks and systems where you have explicit permission.</p>
+        </div>
+        <div class="skill-card">
+          <h3>What the dashboard provides</h3>
+          <ul class="feature-list">
+            <li><strong>Host discovery</strong> — identifies responding devices</li>
+            <li><strong>Open-port visibility</strong> — shows exposed TCP services</li>
+            <li><strong>Service classification</strong> — highlights services for review</li>
+            <li><strong>Scanner health</strong> — tracks recent successful activity</li>
+            <li><strong>Scan history</strong> — records previous attempts and outcomes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="eyebrow">02 — ARCHITECTURE</p>
+      <h2>Simple components, clear operational flow.</h2>
+      <figure class="evidence-card evidence-feature" style="margin-top:28px">
+        <a href="../assets/nmap/linux-apache-architecture.png" class="lightbox-link" data-caption="Linux + Apache architecture used for the Network Scanner Dashboard.">
+          <img src="../assets/nmap/linux-apache-architecture.png" alt="Linux and Apache network scanner architecture" loading="lazy">
+        </a>
+        <figcaption><strong>Linux + Apache architecture</strong><span>Scanner output is generated on Linux, parsed by PHP and presented through Apache.</span></figcaption>
+      </figure>
+      <div class="workflow-grid" style="margin-top:28px">
+        <div class="workflow-step"><span>01</span><h3>Scan</h3><p>systemd triggers the Bash scanner, which invokes Nmap against the configured lab network.</p></div>
+        <div class="workflow-step"><span>02</span><h3>Process</h3><p>The script writes scan output and diagnostic information while protecting the last valid result from failed runs.</p></div>
+        <div class="workflow-step"><span>03</span><h3>Present</h3><p>PHP parses the result and Apache serves a browser-based dashboard with history and service classification.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evidence" class="section">
+    <div class="container">
+      <p class="eyebrow">03 — PROJECT EVIDENCE</p>
+      <h2>Working evidence from the Linux lab.</h2>
+      <p class="section-intro">These screenshots show the dashboard, discovered services, security classification, scan history and the underlying Nmap execution workflow.</p>
+      <div class="evidence-grid">
+        <figure class="evidence-card evidence-feature">
+          <a href="../assets/nmap/dashboard.png" class="lightbox-link" data-caption="Main Network Scanner Dashboard — operational overview of hosts, ports, risk classification and scanner health.">
+            <img src="../assets/nmap/dashboard.png" alt="Main Linux Network Scanner Dashboard" loading="lazy">
+          </a>
+          <figcaption><strong>Dashboard overview</strong><span>Operational view of network discovery, exposed services and scanner health</span></figcaption>
+        </figure>
+        <figure class="evidence-card">
+          <a href="../assets/nmap/hosts-services.png" class="lightbox-link" data-caption="Discovered hosts and services displayed by the dashboard.">
+            <img src="../assets/nmap/hosts-services.png" alt="Discovered hosts and services" loading="lazy">
+          </a>
+          <figcaption><strong>Discovered hosts & services</strong><span>Nmap results presented as structured host and port information</span></figcaption>
+        </figure>
+        <figure class="evidence-card">
+          <a href="../assets/nmap/security-classification.png" class="lightbox-link" data-caption="Security classification view for discovered services.">
+            <img src="../assets/nmap/security-classification.png" alt="Security classification of network services" loading="lazy">
+          </a>
+          <figcaption><strong>Service classification</strong><span>Services categorised for security review</span></figcaption>
+        </figure>
+        <figure class="evidence-card">
+          <a href="../assets/nmap/scanner-history.png" class="lightbox-link" data-caption="Scanner history showing previous scan attempts, status, hosts and duration.">
+            <img src="../assets/nmap/scanner-history.png" alt="Network scanner history" loading="lazy">
+          </a>
+          <figcaption><strong>Scanner history</strong><span>Previous attempts, status, host counts and duration</span></figcaption>
+        </figure>
+        <figure class="evidence-card">
+          <a href="../assets/nmap/linux-nmap-execution.png" class="lightbox-link" data-caption="Linux terminal showing the Nmap execution layer behind the dashboard.">
+            <img src="../assets/nmap/linux-nmap-execution.png" alt="Linux Nmap execution terminal" loading="lazy">
+          </a>
+          <figcaption><strong>Nmap execution</strong><span>Underlying Linux scanning workflow</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="eyebrow">04 — AUTOMATION</p>
+      <h2>Turning a manual command into a repeatable service.</h2>
+      <div class="two-col">
+        <div>
+          <p>The Bash scanner is designed to run repeatedly rather than relying on a manual terminal command. systemd handles scheduled execution, while the script records successful and failed attempts and preserves the previous valid scan when a new attempt fails.</p>
+          <p class="spaced">This makes the project useful as a Cloud Support / DevOps learning exercise because the focus moves beyond “run Nmap” into service operation, error handling, observability and repeatability.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Operational flow</h3>
+          <p><strong>systemd timer</strong> → <strong>network_scan.sh</strong> → <strong>Nmap</strong> → <strong>scan_output.txt</strong> → <strong>network.php</strong> → <strong>Apache dashboard</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">05 — TROUBLESHOOTING</p>
+      <h2>The troubleshooting was part of the project.</h2>
+      <div class="two-col">
+        <div class="skill-card">
+          <h3>Problem</h3>
+          <p>Nmap initially reported route/target errors and attempted scans could return no usable targets.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Investigation</h3>
+          <p>Checked the Linux interface, routing table, VM networking, scanner logs, Apache status and HTTP connectivity.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Resolution</h3>
+          <p>Corrected the VM networking configuration and validated the scanner and web application independently.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Verification</h3>
+          <p>Apache returned HTTP 200 locally and over the VM's LAN address, while the scanner produced valid Nmap results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="eyebrow">06 — WHAT THIS DEMONSTRATES</p>
+      <h2>Infrastructure skills, not just a screenshot.</h2>
+      <div class="skills-grid">
+        <article class="skill-card"><h3>Linux</h3><p>CLI administration · services · permissions · routing · Apache</p></article>
+        <article class="skill-card"><h3>Networking</h3><p>IPv4 · TCP ports · default gateway · LAN discovery · bridged VM networking</p></article>
+        <article class="skill-card"><h3>Automation</h3><p>Bash scripting · systemd scheduling · repeatable execution · log handling</p></article>
+        <article class="skill-card"><h3>Web</h3><p>PHP parsing · Apache hosting · responsive dashboard presentation</p></article>
+        <article class="skill-card"><h3>Security awareness</h3><p>Service exposure review · risky-port classification · defensive lab testing</p></article>
+        <article class="skill-card"><h3>Troubleshooting</h3><p>Reproduce → inspect → isolate → fix → verify</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact project-end">
+    <div class="container">
+      <p class="eyebrow">07 — SOURCE</p>
+      <h2>Explore the implementation.</h2>
+      <p class="section-intro">The portfolio includes the Bash scanner and PHP dashboard source used for this project.</p>
+      <div class="buttons">
+        <a class="btn primary" href="../code/nmap/network_scan.sh" download>Download network_scan.sh</a>
+        <a class="btn secondary" href="../code/nmap/network.php" download>Download network.php</a>
+        <a class="btn secondary" href="../index.html#projects">Back to Portfolio</a>
+      </div>
+      <p class="footer-note">© 2026 William Martin · Linux Network Scanner Dashboard · Controlled home-lab project.</p>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+  <div class="lightbox-inner">
+    <img id="lightbox-image" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
